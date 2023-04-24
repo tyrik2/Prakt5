@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Praktik_5", "Praktik_5\Prak
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZAD2", "ZAD2\ZAD2.csproj", "{F91F9F19-918A-4524-A514-9BD13A77D46B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZAD3", "ZAD3\ZAD3.csproj", "{F4CA4647-A4C4-46F4-926F-08F79C92847C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F91F9F19-918A-4524-A514-9BD13A77D46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F91F9F19-918A-4524-A514-9BD13A77D46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F91F9F19-918A-4524-A514-9BD13A77D46B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4CA4647-A4C4-46F4-926F-08F79C92847C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CA4647-A4C4-46F4-926F-08F79C92847C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CA4647-A4C4-46F4-926F-08F79C92847C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CA4647-A4C4-46F4-926F-08F79C92847C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
