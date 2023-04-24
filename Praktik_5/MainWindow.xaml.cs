@@ -33,30 +33,32 @@ namespace Praktik_5
         {
             try
             {
-                int N = ListBoxData.Items.Count;
-                int maxScore = 0; // максимальное количество правильных ответов
-                bool hasZeroScore = false; // флаг для проверки наличия участников с нулевым количеством правильных ответов
+                int sum = 0; // сумма трехзначных чисел
+                int count = 0; // количество трехзначных чисел
 
-                for (int i = 0; i < N; i++)
+                for (int i = 0; i < ListBoxData.Items.Count; i++)
                 {
-                    int score = Convert.ToInt32(ListBoxData.Items[i]); // количество правильных ответов текущего участника
-                    if (score > maxScore)
+                    // запрашиваем у пользователя число
+                    int number = Convert.ToInt32(ListBoxData.Items[i]);
+
+                    // проверяем, является ли число трехзначным
+                    if (number >= 100 && number <= 999)
                     {
-                        maxScore = score; // обновляем максимальное количество правильных ответов
-                    }
-                    if (score == 0)
-                    {
-                        hasZeroScore = true; // устанавливаем флаг, если найден участник с нулевым количеством правильных ответов
+                        sum += number; // добавляем число к сумме
+                        count++; // увеличиваем количество трехзначных чисел
                     }
                 }
-                TextBlockAnswer.Text = $"{maxScore}";
-                if (hasZeroScore)
+
+                // проверяем, были ли введены трехзначные числа
+                if (count == 0)
                 {
-                    TextBlockAnswer2.Text="YES";
+                    TextBlockAnswer.Text = ("NO");
                 }
                 else
                 {
-                    TextBlockAnswer2.Text="NO";
+                    // выводим среднее арифметическое трехзначных чисел
+                    double average = (double)sum / count;
+                    TextBlockAnswer2.Text = ("Среднее арифметическое: " + average);
                 }
             }
             catch (FormatException)
